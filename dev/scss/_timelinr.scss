@@ -5,6 +5,11 @@
 	margin: 40px auto;
 	position: relative;
 	background: url('/img/timelinr_dot.gif') 523px top repeat-y;
+	@media #{$small} {
+		width: 320px;
+		background: url('/img/timelinr_dot.gif') 263px top repeat-y;
+		height: 450px;
+	}
 }
 
 .timeline_dates {
@@ -12,6 +17,10 @@
 	height: 360px;
 	overflow: hidden;
 	float: right;
+	@media #{$small} {
+		width: 60px;
+		height: 450px;
+	}
 	li {
 		list-style: none;
 		width: 100px;
@@ -20,6 +29,10 @@
 		font-size: 2rem;
 		padding-left: 10px;
 		background: url('/img/timelinr_biggerdot.png') left center no-repeat;
+		@media #{$small} {
+			width: 60px;
+			font-size: 1.2rem;
+		}
 	}
 	a {
 		line-height: 38px;
@@ -37,18 +50,33 @@
 	height: 360px;
 	overflow: hidden;
 	float: left;
+	@media #{$small} {
+		width: 240px;
+		height: 450px;
+	}
 	li {
 		width: 500px;
-		height: 600px;
+		height: 360px;
 		list-style: none;
+		@media #{$small} {
+			width: 240px;
+			height: 450px;
+		}
 	}
 	&_ttl {
 		text-align: center;
 		font-size: 5rem;
+		@media #{$small} {
+			font-size: 3.6rem;
+		}
 	}
 	&_body {
 		margin: 50px 0 0;
 		line-height: 1.8;
+		@media #{$small} {
+			margin-top: 30px;
+			font-size: 1.2rem;
+		}
 		p+p {
 			margin-top: 0.6em;
 		}
@@ -60,6 +88,9 @@
   height: 70px;
   position: absolute;
   right: 0;
+  @media #{$small} {
+		width: 60px;
+	}
 }
 
 .grad_top {

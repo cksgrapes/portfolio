@@ -20,6 +20,9 @@
 	padding: 150px 0;
 	max-width: $wrapWidth;
 	margin: 0 auto;
+	@media #{$small} {
+		padding: 70px 30px;
+	}
 	&_ttl {
 		float: right;
 		width: 300px;
@@ -27,19 +30,35 @@
 		line-height: 1;
 		font-size: 6rem;
 		color: rgba(255,255,255,0.1);
+		@media #{$small} {
+			float: none;
+			width: auto;
+			text-align: center;
+			margin-bottom: 60px;
+		}
 		.section-ttlL & {
 			float: left;
 			text-align: left;
+			@media #{$small} {
+				float: none;
+				text-align: center;
+			}
 		}
 	}
 	&_body {
 		overflow: hidden;
 		font-size: 1.4rem;
+		@media #{$small} {
+			overflow: visible;
+		}
 	}
 	&-ttlL {
 		padding: 150px 0;
 		max-width: $wrapWidth;
 		margin: 0 auto;
+		@media #{$small} {
+			padding: 70px 30px;
+		}
 	}
 }
 
@@ -51,6 +70,9 @@
 	line-height: 50px;
 	font-size: 1.4rem;
 	z-index: 9999;
+	@media #{$small} {
+		font-size: 1rem;
+	}
 	li {
 		width: 16.667%;
 	}
@@ -71,20 +93,40 @@
 	max-width: $wrapWidth;
 	margin: 0 auto;
 	text-align: center;
+	@media #{$small} {
+		padding: 100px 0;
+	}
 	&_ttl {
 		font-size: 8rem;
 		margin-bottom: 30px;
+		@media #{$small} {
+			font-size: 6rem;
+			margin-bottom: 50px;
+		}
 	}
 	&_txt {
 		font-size: 2.2rem;
 		line-height: 1.8;
 		margin-bottom: 40px;
+		@media #{$small} {
+			font-size: 1.4rem;
+			line-height: 2.6;
+			margin-bottom: 60px;
+		}
 	}
 	&_sns {
 		li {
 			display: inline;
 			&+li {
 				margin-left: 80px;
+				@media #{$small} {
+					margin-left: 40px;
+				}
+			}
+			img {
+				@media #{$small} {
+					width: 40px;
+				}
 			}
 		}
 	}
@@ -98,10 +140,16 @@
 			width: 150px;
 			height: 150px;
 			margin-right: 60px;
+			@media #{$small} {
+				float: none;
+				display: block;
+				margin: 0 auto 30px;
+			}
 		}
 		&_body {
 			overflow: hidden;
-			line-height: 2;
+			line-height: 2.2;
+			text-align: center;
 		}
 	}
 }
@@ -115,9 +163,15 @@
 			float: left;
 			color: $txtSubC;
 			font-weight: bold;
+			@media #{$small} {
+				float: none;
+			}
 		}
 		dd {
 			margin-left: 160px;
+			@media #{$small} {
+				margin-left: 0;
+			}
 		}
 		li {
 			margin-right: 20px;
@@ -136,9 +190,15 @@
 			font-size: 1.6rem;
 			font-weight: bold;
 			color: $txtSubC;
+			.works_group-other & {
+				font-size: 1.4rem;
+			}
 		}
 		&_body {
 			line-height: 1.8;
+			.works_group-other & {
+				font-size: 1.2rem;
+			}
 		}
 	}
 }
@@ -147,6 +207,9 @@
 	padding: 250px 0 400px;
 	font-size: 6rem;
 	text-align: center;
+	@media #{$small} {
+		font-size: 2rem;
+	}
 }
 
 .copy {
