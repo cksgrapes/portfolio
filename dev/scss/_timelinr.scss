@@ -7,7 +7,8 @@
 	background: url('/img/timelinr_dot.gif') 523px top repeat-y;
 	@media #{$small} {
 		width: 320px;
-		background: url('/img/timelinr_dot.gif') 263px top repeat-y;
+		background: url('/img/timelinr_dot.gif') 261px top repeat-y;
+		background-size: 2px;
 		height: 450px;
 	}
 }
@@ -32,6 +33,8 @@
 		@media #{$small} {
 			width: 60px;
 			font-size: 1.2rem;
+			background: url('/img/timelinr_biggerdot.png') left center no-repeat;
+			background-size: 4px;
 		}
 	}
 	a {
