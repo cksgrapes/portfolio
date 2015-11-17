@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+//========================================
+//
+// common
+//
+//========================================
+
+.iblist {
+	letter-spacing:-.5em;
+}
+.iblist li {
+	vertical-align:top;
+	display:inline-block;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.section {
+	padding: 150px 0;
+	max-width: $wrapWidth;
+	margin: 0 auto;
+	&_ttl {
+		float: right;
+		width: 300px;
+		text-align: right;
+		font-size: 6rem;
+		color: rgba(255,255,255,0.1);
+		.section-ttlL & {
+			float: left;
+			text-align: left;
+		}
+	}
+	&_body {
+		overflow: hidden;
+		font-size: 1.4rem;
+	}
+	&-ttlL {
+		padding: 300px 0;
+		max-width: $wrapWidth;
+		margin: 0 auto;
+	}
+}
+
+.globalNav {
+	background: $bgSubC;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4rem;
+	li {
+		width: 20%;
+	}
+	a {
+		color: $txtMainC;
+		display: block;
+	}
+	a:hover {
+		background: rgba(0,0,0,0.2);
+	}
+}
+
+.summary {
+	padding: 100px 0;
+	max-width: $wrapWidth;
+	margin: 0 auto;
+	text-align: center;
+	&_ttl {
+		font-size: 8rem;
+		margin-bottom: 30px;
+	}
+	&_txt {
+		font-size: 2.2rem;
+		line-height: 1.8;
+		margin-bottom: 40px;
+	}
+	&_sns {
+		li {
+			display: inline;
+			&+li {
+				margin-left: 80px;
+			}
+		}
+	}
+}
+
+.profile {
+	padding-top: 300px;
+	&_card {
+		&_img {
+			float: left;
+			width: 150px;
+			height: 150px;
+			margin-right: 60px;
+		}
+		&_body {
+			overflow: hidden;
+			line-height: 2;
+		}
+	}
+}
+
+.contact {
+	padding: 300px 0;
+	font-size: 6rem;
+	text-align: center;
+}
+
+.copy {
+	padding-bottom: 100px;
+	text-align: center;
+	font-size: 1.4rem;
+	color: rgba(255,255,255,0.1);
+}

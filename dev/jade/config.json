@@ -1,0 +1,57 @@
+{
+	"appid": "",
+	"index": {
+		"meta": {
+			"title": "Chikashi - Frontend Engineer",
+			"description": "",
+			"keyword": "フロントエンドエンジニア"
+		},
+		"ogp": {
+			"sitename": "",
+			"url":"",
+			"title":"",
+			"description":"",
+			"image":"",
+			"type":""
+		}
+	},
+	"snslink": [
+		{
+			"url":"https://github.com/cksgrapes",
+			"icon":"github",
+			"alt":"Github"
+		},
+		{
+			"url":"http://codepen.io/cksgrapes/",
+			"icon":"codepen",
+			"alt":"Codepen"
+		},
+		{
+			"url":"https://www.facebook.com/chikashi029",
+			"icon":"facebook",
+			"alt":"Facebook"
+		}
+	],
+	"globalnav": [
+		{
+			"title":"Profile",
+			"url":""
+		},
+		{
+			"title":"Timeline",
+			"url":""
+		},
+		{
+			"title":"Skill",
+			"url":""
+		},
+		{
+			"title":"Works",
+			"url":""
+		},
+		{
+			"title":"Contact",
+			"url":""
+		}
+	]
+}

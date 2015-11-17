@@ -1,0 +1,30 @@
+//---------------------------------------------
+//- variable setting
+//---------------------------------------------
+
+//- 現在ページ名
+- var page = index
+//- OGPタグ (true=表示, false=非表示)
+- var ogp = true
+//- ファビコン (true=表示, false=非表示)
+- var favicon = true
+//- クリップアイコン (true=表示, false=非表示)
+- var clipicon = true
+//- javascript読込 (true=表示, false=非表示)
+- var js_load = false
+//- jQuery読込位置 (true=head内, false=body内下部)
+- var jquery_load_head = false
+//- Font Awesomeの利用 (true=利用する, false=利用しない)
+- var fontawesome_use = true
+
+//---------------------------------------------
+//- source
+//---------------------------------------------
+
+include _mixin.jade
+
+doctype html
+html(lang='ja')
+	block variable
+	include _head.jade
+	include _body.jade

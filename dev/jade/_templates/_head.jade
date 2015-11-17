@@ -1,0 +1,16 @@
+if ogp
+	head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#")
+		+meta
+		if ogp
+			meta(property='fb:app_id', content='')
+			meta(property='og:site_name', content='')
+			meta(property='og:url', content='')
+			meta(property='og:title', content='')
+			meta(property='og:description', content='')
+			meta(property='og:image', content='')
+			meta(property='og:type', content='')
+		+link
+else
+	head
+		+meta
+		+link
