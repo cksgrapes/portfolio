@@ -34,24 +34,34 @@
 	],
 	"globalnav": [
 		{
+			"title":"Home",
+			"url":"#sTop",
+			"id":"sTop"
+		},
+		{
 			"title":"Profile",
-			"url":""
+			"url":"#s1",
+			"id":"s1"
 		},
 		{
 			"title":"Timeline",
-			"url":""
+			"url":"#s2",
+			"id":"s2"
 		},
 		{
 			"title":"Skill",
-			"url":""
+			"url":"#s3",
+			"id":"s3"
 		},
 		{
 			"title":"Works",
-			"url":""
+			"url":"#s4",
+			"id":"s4"
 		},
 		{
 			"title":"Contact",
-			"url":""
+			"url":"#s5",
+			"id":"s5"
 		}
 	]
 }

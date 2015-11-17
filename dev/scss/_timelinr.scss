@@ -1,0 +1,73 @@
+.JS_timeline {
+	width: 620px;
+	height: 360px;
+	overflow: hidden;
+	margin: 40px auto;
+	position: relative;
+	background: url('/img/timelinr_dot.gif') 523px top repeat-y;
+}
+
+.timeline_dates {
+	width: 100px;
+	height: 360px;
+	overflow: hidden;
+	float: right;
+	li {
+		list-style: none;
+		width: 100px;
+		height: 70px;
+		line-height: 70px;
+		font-size: 2rem;
+		padding-left: 10px;
+		background: url('/img/timelinr_biggerdot.png') left center no-repeat;
+	}
+	a {
+		line-height: 38px;
+		padding-bottom: 10px;
+		color: #653333;
+	}
+	.selected {
+		font-size: 1.6em;
+		color: $txtSubC;
+	}
+}
+
+.timeline_issues {
+	width: 500px;
+	height: 360px;
+	overflow: hidden;
+	float: left;
+	li {
+		width: 500px;
+		height: 600px;
+		list-style: none;
+	}
+	&_ttl {
+		text-align: center;
+		font-size: 5rem;
+	}
+	&_body {
+		margin: 50px 0 0;
+		line-height: 1.8;
+		p+p {
+			margin-top: 0.6em;
+		}
+	}
+}
+
+.grad_top, .grad_bottom {
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+}
+
+.grad_top {
+  top: 0;
+  background: url('/img/timelinr_grad_top.png') repeat-x;
+}
+
+.grad_bottom {
+  bottom: 0;
+  background: url('/img/timelinr_grad_bottom.png') repeat-x;
+}

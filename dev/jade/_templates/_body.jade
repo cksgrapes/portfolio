@@ -5,6 +5,7 @@ body
 	| 
 	| 
 	if js_load
-		if !jquery_load_head
-			include _jquery.jade
-		script(src="/js/common.js")
+		script( src='/js/jquery-1.11.3.min.js' )
+		script( src='/js/jquery.timelinr-0.9.54.js' )
+		script( src='/js/jquery.smint.js' )
+		script(src="/js/config.js")

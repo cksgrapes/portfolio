@@ -2,7 +2,7 @@ extends _templates/_layout.jade
 
 block content
 	.contents
-		.summary
+		.summary.sTop
 			h1.summary_ttl Chikashi
 			p.summary_txt.
 				和やかな柔軟性と多角的な応用力<br>
@@ -11,12 +11,12 @@ block content
 				10歳から独学をつづけ培った技術はホンモノです
 			ul.summary_sns
 				for obj in snslink
-					li: a(href='#{obj.url}'): img(src="/img/logo_#{obj.icon}.png", alt="#{obj.alt}")
+					li: a(href='#{obj.url}',target='_blank'): img(src="/img/logo_#{obj.icon}.png", alt="#{obj.alt}")
 		.globalNav
 			ul.iblist
 				for obj in globalnav
 					li: a(href="#{obj.url}") #{obj.title}
-		.profile.section
+		.profile.s1.section
 			section
 				.section_ttl: h2 Profile
 				.section_body
@@ -28,7 +28,7 @@ block content
 							li イメージカラーは赤と黒
 							li 三度の飯より本が好き
 							li きらいなものはわが身のぜい肉
-		.timeline.section-ttlL
+		.timeline.s2.section-ttlL
 			section
 				.section_ttl: h2 Timeline
 				.section_body
@@ -42,35 +42,42 @@ block content
 						ul.timeline_issues
 							li#2001
 								h3.timeline_issues_ttl 2001
-								p 親友はとても絵が上手でした。ある日、私を家に招いた彼女が見せてくれたのは、独特でステキなデザインをした彼女のイラストサイト！
-								p goo簡単ホームページでしかサイトをつくったことのなかった私はとてもおどろき、魔法の仕組みを彼女に教わりました。
-								p HTML。そしてCSS。幸いなことに、それらに関する本が自宅に眠っていることを私は知っていました。フロントエンドエンジニアへと繋がる私の道は、ここから始まったのです。
-								p あゝ懐かしきテーブルデザイン。
+								.timeline_issues_body
+									p 親友はとても絵が上手でした。ある日、私を家に招いた彼女が見せてくれたのは、独特でステキなデザインをした彼女のイラストサイト！
+									p goo簡単ホームページでしかサイトをつくったことのなかった私はとてもおどろき、魔法の仕組みを彼女に教わりました。
+									p HTML。そしてCSS。幸いなことに、それらに関する本が自宅に眠っていることを私は知っていました。フロントエンドエンジニアへと繋がる私の道は、ここから始まったのです。
+									p あゝ懐かしきテーブルデザイン。
 							li#2005
 								h3.timeline_issues_ttl 2005
-								p この頃は私の暗黒期であり、黄金期でもあります。
-								p 私は小学生の時分からリーダーシップをとることが好きでした。中学校でも学級委員、生徒会とさまざま挑戦をしていました。しかし、あるとき突然、私は学校に行けなくなりました。いつの間にか心を病んでしまっていたのです。今でも原因はわかりません。辛く、悲しい日々でした。
-								p ですが、代わりに私はたくさんの時間を手に入れました。来る日も来る日も夢中でWebサイトを作りつづけました。今思えば、随分つたなく見栄えのしないソースコードを書いていた気がします。たくさん、たくさん書きました。それらが今では、立派な礎となっています。
+								.timeline_issues_body
+									p この頃は私の暗黒期であり、黄金期でもあります。
+									p 私は小学生の時分からリーダーシップをとることが好きでした。中学校でも学級委員、生徒会とさまざま挑戦をしていました。しかし、あるとき突然、私は学校に行けなくなりました。いつの間にか心を病んでしまっていたのです。今でも原因はわかりません。辛く、悲しい日々でした。
+									p ですが、代わりに私はたくさんの時間を手に入れました。来る日も来る日も夢中でWebサイトを作りつづけました。今思えば、随分つたなく見栄えのしないソースコードを書いていた気がします。たくさん、たくさん書きました。それらが今では、立派な礎となっています。
 							li#2011
 								h3.timeline_issues_ttl 2011
-								p 歌を学び、小説や絵をかき、すばらしい充実の時間を過ごした高校時代を経て、私はフリーランスのコーダーを始めました。ひとつひとつは些細な仕事でしたが、その積み重ねは私に自信と実績、未来への希望を与えてくれました。
-								p そして訪れるHTML5とCSS3への動揺と好奇心。
+								.timeline_issues_body
+									p 歌を学び、小説や絵をかき、すばらしい充実の時間を過ごした高校時代を経て、私はフリーランスのコーダーを始めました。ひとつひとつは些細な仕事でしたが、その積み重ねは私に自信と実績、未来への希望を与えてくれました。
+									p そして訪れるHTML5とCSS3への動揺と好奇心。
 							li#2012
 								h3.timeline_issues_ttl 2012
-								p Web製作会社への入社。それは私の人生の転機のひとつでした。規模の大きな仕事への挑戦、チームを組んで仕事をするという環境。あたらしい世界を目の当たりにして、ぐんと視野が広がりました。
-								p jQueryもといJavaScriptへの理解もここでぐんと深まったことが、後々にも影響を与えています。当時の上長、S氏に多大なる感謝を。
+								.timeline_issues_body
+									p Web製作会社への入社。それは私の人生の転機のひとつでした。規模の大きな仕事への挑戦、チームを組んで仕事をするという環境。あたらしい世界を目の当たりにして、ぐんと視野が広がりました。
+									p jQueryもといJavaScriptへの理解もここでぐんと深まったことが、後々にも影響を与えています。当時の上長、S氏に多大なる感謝を。
 							li#2016
 								h3.timeline_issues_ttl 2016
-								p ちょっと描き疲れた
-								p VanilaJSやAnglur.js,CoffeeScriptなんかを鋭意学習中
-		.skill.section
+								.timeline_issues_body
+									p ちょっと描き疲れた
+									p VanilaJSやAnglur.js,CoffeeScriptなんかを鋭意学習中
+						.grad_top
+						.grad_bottom
+		.skill.section.s3
 			section
 				.section_ttl: h2 Skill
 				.section_body
 					dl.skill_group
 						dt Cording
 						dd
-							ul
+							ul.iblist
 								li HTML4
 								li XHTML
 								li HTML5
@@ -81,51 +88,54 @@ block content
 					dl.skill_group
 						dt Library
 						dd
-							ul
+							ul.iblist
 								li jQuery
 								li Gulp
 					dl.skill_group
 						dt Preprocessor
 						dd
-							ul
+							ul.iblist
 								li Jade
 								li Sass
 					dl.skill_group
 						dt CMS
 						dd
-							ul
+							ul.iblist
 								li Wordpress
 					dl.skill_group
 						dt Software
 						dd
-							ul
+							ul.iblist
 								li Sublime Text
 								li Dreamweaver
 								li Photoshop
 								li Illustrator
 								li Fireworks
 								li Sketch
-		.works.section-ttlL
+		.works.section-ttlL.s4
 			section
 				h2.section_ttl Works
 				.section_body
 					.works_group
 						section
-							h3.works_body_ttl 大手書籍レーベル公式サイト
-							p リニューアルに際して現行のサイトに大幅に機能追加。<br>すでにWordpressで構築されていたため、現存テーマの編集。<br>PC/SPそれぞれのコーディングを30ページほど。
+							h3.works_group_ttl 大手書籍レーベル公式サイト
+							.works_group_body
+								p リニューアルに際して現行のサイトに大幅に機能追加。<br>すでにWordpressで構築されていたため、現存テーマの編集。<br>PC/SPそれぞれのコーディングを30ページほど。
 					.works_group
 						section
-							h3.works_body_ttl 大手住宅企業のコミュニティサイト
-							p レスポンシブ対応でWordpress組込前提のコーディング。10ページほど。
+							h3.works_group_ttl 大手住宅企業のコミュニティサイト
+							.works_group_body
+								p レスポンシブ対応でWordpress組込前提のコーディング。10ページほど。
 					.works_group
 						section
-							h3.works_body_ttl その他
-							p.
-								・メガバンクのLPコーディングと更新<br>
-								・自社の社内テンプレート作成<br>
-								・デバッグ用のブックマークレット作成<br>
-								etc.
-		.contact
+							h3.works_group_ttl その他
+							.works_group_body
+								p.
+									・メガバンクのLPコーディングと更新<br>
+									・自社の社内テンプレート作成<br>
+									・デバッグ用のブックマークレット作成<br>
+									etc.
+		.contact.s5
 				p: a(href="mailto:contact@chikashi.org") contact@chikashi.org
 		.copy
 			p &copy; 2015 chikashi.org

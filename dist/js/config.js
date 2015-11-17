@@ -1,29 +1,15 @@
 jQuery(function($){
-	$('.gridItem>a').magnificPopup({
-		type: 'ajax',
-		// alignTop: true,
-		// overflowY: 'scroll'
-	});
+	$().timelinr({
+		orientation: 'vertical',
+		containerDiv : '.JS_timeline',
+		datesDiv: '.timeline_dates',
+		issuesDiv : '.timeline_issues',
+		// issuesSpeed: 	300,
+		// datesSpeed: 	100,
+		// arrowKeys: 		'true',
+		// startAt:		3
+	})
 
-	$('.sfTrgr').on('click', function() {
-		$(this).next().stop().slideToggle(300);
-		$(this).toggleClass('active');
-	});
+	$('.globalNav').smint();
 
-	$('.grid').masonry({
-		columnWidth: 150,
-		itemSelector: '.gridItem',
-		gutter: 30,
-		isFitWidth: true
-	});
-
-	// function gridMasonry() {
-	// 	$('.grid').gridalicious({
-	// 		width: 150,
-	// 		gutter: 30,
-	// 		selector: '.gridItem'
-	// 	});
-	// }
-
-	// gridMasonry();
 });
